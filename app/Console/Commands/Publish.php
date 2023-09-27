@@ -8,9 +8,9 @@ use Exception;
 
 class Publish extends Command
 {
-    protected $signature = 'mixpost:publish';
+    protected $signature = 'mixpost:publish {--enterprise}';
 
-    protected $description = 'Publish all assets requested by Mixpost';
+    protected $description = 'Publish assets requested by Mixpost';
 
     public function handle(): void
     {
@@ -19,11 +19,16 @@ class Publish extends Command
 
         $commands = [
             'mixpost:publish-assets --force=true',
-            'mixpost-enterprise:publish-assets --force=true',
             'vendor:publish --tag=mixpost-migrations --force',
-            'vendor:publish --tag=mixpost-enterprise-migrations --force',
             'horizon:publish',
         ];
+
+        if($this->option('enterprise')) {
+            $commands = [
+                'mixpost-enterprise:publish-assets --force=true',
+                'vendor:publish --tag=mixpost-enterprise-migrations --force',
+            ];
+        }
 
         collect($commands)->each(function (string $command) {
             $this->comment("Executing `{$command}`...");
@@ -37,6 +42,6 @@ class Publish extends Command
             $this->info('');
         });
 
-        $this->info('All assets has been published!');
+        $this->info('Mixpost assets has been published!');
     }
 }

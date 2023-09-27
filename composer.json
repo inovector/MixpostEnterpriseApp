@@ -55,6 +55,7 @@
             "@php artisan mixpost:setup-gitignore",
             "@php artisan queue:batches-table",
             "@php artisan mixpost:publish",
+            "@php artisan mixpost:publish --enterprise",
             "@php artisan storage:link"
         ]
     },
