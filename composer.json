@@ -3,11 +3,18 @@
     "type": "project",
     "description": "Standalone application with Mixpost Enterprise's Laravel package pre-installed and configured",
     "keywords": ["inovector", "mixpost", "mixpost-enterpsie", "mixpost-saas"],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.inovector.com"
+        }
+    ],
     "require": {
         "php": "^8.1",
         "doctrine/dbal": "^3.6",
         "guzzlehttp/guzzle": "^7.2",
-        "inovector/mixpost-enterprise": "^1.0",
+        "inovector/mixpost-enterprise": "dev-next",
+        "inovector/mixpost-pro-team": "dev-next",
         "laravel/framework": "^10.8",
         "laravel/horizon": "^5.15",
         "laravel/tinker": "^2.8",
@@ -22,12 +29,6 @@
         "phpunit/phpunit": "^10.1",
         "spatie/laravel-ignition": "^2.0"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.inovector.com"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "App\\": "app/",
