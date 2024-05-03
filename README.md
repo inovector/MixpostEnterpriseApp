@@ -5,15 +5,17 @@
 # Welcome to Mixpost Enterprise
 Launch your own white-labeled SaaS and start generating revenue.
 
-Mixpost it's the coolest Self-hosted social media management software. Easily create, schedule, publish, and manage social media content in one place, with no limits or monthly subscription fees. More details on [mixpost.app](https://mixpost.app/).
+Mixpost it's the coolest Self-hosted social media management software. Easily create, schedule, publish, and manage social media content in one place, with no limits or monthly subscription fees. 
+
+More details on [mixpost.app](https://mixpost.app/)
 
 Join our community:
 
-- [Discord](https://discord.gg/5YdseZnK2Z)
-- [Facebook Private Group](https://www.facebook.com/groups/inovector)
+- [Discord](https://mixpost.app/discord)
+- [Facebook Private Group](https://www.facebook.com/groups/getmixpost)
 
 ## Installation
 
 In order to install Mixpost Enterprise you'll need to [get a license](https://mixpost.app/) first.
 
-Read our [documentation](https://docs.inovector.com/books/mixpost-enterprise/page/as-a-standalone-app) on how to get started.
+Read our [documentation](https://docs.mixpost.app/enterprise) on how to get started.
