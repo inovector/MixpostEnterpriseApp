@@ -20,7 +20,6 @@ class Publish extends Command
         $commands = [
             'mixpost:publish-assets --force=true',
             'vendor:publish --tag=mixpost-migrations --force',
-            'horizon:publish',
         ];
 
         if($this->option('enterprise')) {
