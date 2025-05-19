@@ -3,6 +3,13 @@
 
 
 # Welcome to Mixpost Enterprise
+
+> [!NOTE]
+> This repository only contains standalone Mixpost Enterprise.
+> If you're looking for the **Mixpost Enterprise package**, it's available exclusively to customers with an active [license](https://mixpost.app/pricing?utm_source=github&utm_medium=MixpostProTeamApp).  
+> Please refer to the private repository: <a href="https://github.com/inovector/mixpost-enterprise" rel="nofollow noreferrer">inovector/enterprise</a>.
+
+
 Launch your own white-labeled SaaS and start generating revenue.
 
 Mixpost it's the coolest Self-hosted social media management software. Easily create, schedule, publish, and manage social media content in one place, with no limits or monthly subscription fees. 
