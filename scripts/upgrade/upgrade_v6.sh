@@ -78,7 +78,7 @@ php artisan migrate --force
 
 echo ""
 echo "Updating Horizon configuration..."
-HORIZON_CONFIG_URL="https://raw.githubusercontent.com/inovector/MixpostProTeamApp/main/config/horizon.php"
+HORIZON_CONFIG_URL="https://raw.githubusercontent.com/inovector/MixpostEnterpriseApp/main/config/horizon.php"
 if curl -fsSL "$HORIZON_CONFIG_URL" -o config/horizon.php; then
     echo "Horizon configuration updated."
 else
