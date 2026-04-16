@@ -57,7 +57,8 @@
             "@php artisan mixpost:publish",
             "@php artisan mixpost:sleep",
             "@php artisan mixpost:publish --enterprise",
-            "@php artisan storage:link"
+            "@php artisan storage:link",
+            "@php -r \"array_map('unlink', glob('scripts/upgrade/*'));\""
         ]
     },
     "extra": {
