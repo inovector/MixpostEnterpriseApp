@@ -45,32 +45,33 @@ composer update
 echo ""
 echo "Publishing assets..."
 php artisan mixpost:publish-assets --force=true
+php artisan mixpost-enterprise:publish-assets --force=true
 
 echo ""
 echo "Creating upgrade migrations..."
-MIGRATION_SOURCE="vendor/inovector/mixpost-pro-team/database/migrations-upgrade/2026_04_01_123148_upgrade_mixpost_v5.php"
-MIGRATION_DEST="database/migrations/2026_04_01_123148_upgrade_mixpost_v6.php"
+PRO_MIGRATION_SOURCE="vendor/inovector/mixpost-pro-team/database/migrations-upgrade/2026_04_01_123148_upgrade_mixpost_v5.php"
+PRO_MIGRATION_DEST="database/migrations/2026_04_01_123148_upgrade_mixpost_v6.php"
 
-if [ ! -f "$MIGRATION_SOURCE" ]; then
-    echo "Error: Migration file not found at $MIGRATION_SOURCE"
+if [ ! -f "$PRO_MIGRATION_SOURCE" ]; then
+    echo "Error: Migration file not found at $PRO_MIGRATION_SOURCE"
     php artisan up
     exit 1
 fi
 
-cp "$MIGRATION_SOURCE" "$MIGRATION_DEST"
-echo "Migration copied to $MIGRATION_DEST"
+cp "$PRO_MIGRATION_SOURCE" "$PRO_MIGRATION_DEST"
+echo "Migration copied to $PRO_MIGRATION_DEST"
 
-ENTERPRISE_MIGRATION_SOURCE="vendor/inovector/mixpost-enterprise/database/migrations-upgrade/2026_04_01_123148_upgrade_mixpost_e_v6.php"
-ENTERPRISE_MIGRATION_DEST="database/migrations/2026_04_01_123148_upgrade_mixpost_e_v6.php"
+ENTERPRISE_PRO_MIGRATION_SOURCE="vendor/inovector/mixpost-enterprise/database/migrations-upgrade/2026_04_01_123148_upgrade_mixpost_e_v6.php"
+ENTERPRISE_PRO_MIGRATION_DEST="database/migrations/2026_04_01_123148_upgrade_mixpost_e_v6.php"
 
-if [ ! -f "$ENTERPRISE_MIGRATION_SOURCE" ]; then
-    echo "Error: Migration file not found at $ENTERPRISE_MIGRATION_SOURCE"
+if [ ! -f "$ENTERPRISE_PRO_MIGRATION_SOURCE" ]; then
+    echo "Error: Migration file not found at $ENTERPRISE_PRO_MIGRATION_SOURCE"
     php artisan up
     exit 1
 fi
 
-cp "$ENTERPRISE_MIGRATION_SOURCE" "$ENTERPRISE_MIGRATION_DEST"
-echo "Migration copied to $ENTERPRISE_MIGRATION_DEST"
+cp "$ENTERPRISE_PRO_MIGRATION_SOURCE" "$ENTERPRISE_PRO_MIGRATION_DEST"
+echo "Migration copied to $ENTERPRISE_PRO_MIGRATION_DEST"
 
 echo ""
 echo "Running migrations..."
@@ -112,4 +113,4 @@ php artisan horizon:terminate 2>/dev/null || true
 php artisan up
 
 echo ""
-echo "Mixpost Pro has been upgraded to v5 successfully!"
+echo "Mixpost Enterprise has been upgraded to v6 successfully!"
