@@ -1,28 +1,25 @@
-
-[<img src="./art/logo-v2.svg" alt="Logo Mixpost" />](https://mixpost.app)
-
-
-# Welcome to Mixpost Enterprise
-
-> [!NOTE]
-> This repository only contains standalone Mixpost Enterprise.
-> If you're looking for the **Mixpost Enterprise package**, it's available exclusively to customers with an active [license](https://mixpost.app/pricing?utm_source=github&utm_medium=MixpostProTeamApp).  
-> Please refer to the private repository: <a href="https://github.com/inovector/mixpost-enterprise" rel="nofollow noreferrer">inovector/enterprise</a>.
+[<img src="./art/page-cover.png" alt="Cover" />](https://mixpost.app)
 
 
-Launch your own white-labeled SaaS and start generating revenue.
+# Mixpost Enterprise
 
-Mixpost it's the coolest Self-hosted social media management software. Easily create, schedule, publish, and manage social media content in one place, with no limits or monthly subscription fees. 
+Launch your own white-labeled social media management SaaS and start generating revenue. Self-hosted software with no monthly fees, no limits, and full data privacy.
 
-More details on [mixpost.app](https://mixpost.app/)
+## Getting Started
 
-Join our community:
+A license code is required to activate Mixpost Enterprise. You will be prompted to enter it during installation.
+
+Purchase a license at [mixpost.app](https://mixpost.app/pricing?utm_source=github&utm_medium=MixpostProTeamApp).
+
+## Documentation
+
+Full installation guide, configuration, and usage instructions are available at [docs.mixpost.app/enterprise](https://docs.mixpost.app/enterprise).
+
+## Community
 
 - [Discord](https://mixpost.app/discord)
 - [Facebook Private Group](https://www.facebook.com/groups/getmixpost)
 
-## Installation
+## More Info
 
-In order to install Mixpost Enterprise you'll need to [get a license](https://mixpost.app/) first.
-
-Read our [documentation](https://docs.mixpost.app/enterprise) on how to get started.
+Visit [mixpost.app](https://mixpost.app/?utm_source=github&utm_medium=MixpostProTeamApp) to learn more.
