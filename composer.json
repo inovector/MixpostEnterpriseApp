@@ -12,7 +12,8 @@
     "require": {
         "php": "^8.2",
         "guzzlehttp/guzzle": "^7.2",
-        "inovector/mixpost-enterprise": "^7.0",
+        "inovector/mixpost-enterprise": "dev-new-migration-engine",
+        "inovector/mixpost-pro-team": "dev-new-migration-engine",
         "laravel/framework": "^13.0",
         "laravel/horizon": "^5.15",
         "laravel/reverb": "^1.0",
